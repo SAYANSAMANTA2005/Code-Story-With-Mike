@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
 import numpy
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -56,7 +57,6 @@ def load_documents(folder=KB_FOLDER):
                 )
                 
     return documents
-
 
 
 

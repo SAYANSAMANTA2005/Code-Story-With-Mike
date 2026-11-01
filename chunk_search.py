@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
 import numpy
+import json
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -93,7 +94,20 @@ def chunk_document(document):
             chunk_id=chunk_id+1
     
     return chunks
-     
+
+
+#save chunks in vector_store.json file
+def save_vector_store(chunks):
+    with open(os.getenv("VECTOR_STORE_FILE"),"w",encoding="utf-8") as f:#f --> file er pointer
+        json.dump(chunks,f,indent=4)#indent=4 --> pretty print the json file with 4 spaces indentation
+
+#load chunks from vector_store.json file
+
+def load_vector_store():
+    with open(os.getenv("VECTOR_STORE_FILE"),"r",encoding="utf-8") as f:
+      return json.load(f)
+
+
  #create chunks from a document -- 
  # each chunk should have these keys -- source,chunk_id,text,size,vector
 def create_chunks():
@@ -122,10 +136,16 @@ def test(user_query,chunks,top_k=3):
 
 #lets start testing the code
 
-
-chunks=create_chunks()
-chunks=add_embeddings(chunks)
-
+chunks=[]
+if os.path.exists(os.getenv("VECTOR_STORE_FILE")):
+    chunks=load_vector_store()
+else:
+    
+    chunks=create_chunks()
+    chunks=add_embeddings(chunks)
+    save_vector_store(chunks)
+    
+    
 print(f"Loaded {len(chunks)} chunks from {KB_FOLDER} folder")
 
 user_query="Benefits of Maternity Leave and How Can One be Good At Python Programming ?"
