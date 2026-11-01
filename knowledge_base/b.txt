@@ -1,0 +1,18 @@
+
+What Coding Is Used For
+
+• Web Development: Building interactive websites and browser interfaces using HTML, CSS, and JavaScript.
+• Software & App Creation: Developing mobile apps, desktop programs, and operating systems with languages like Python, Java, C++, Swift, and Kotlin.
+• Data Analysis & AI: Processing massive datasets, automating workflows, and training machine learning models.
+• Database Management: Storing, organizing, and querying data using SQL and backend frameworks.
+
+Coding vs. Programming
+
+• Coding: The specific act of writing lines of code in a chosen syntax.
+• Programming: The larger umbrella of software development, which includes system architecture, algorithm design, testing, debugging, and long-term maintenance.
+
+How to Get Started
+
+1. Choose a beginner-friendly language: Python is widely recommended because it reads like plain English and supports web, data, and AI workflows. (Free interactive platforms like Coddy Tech offer step-by-step browser lessons).
+2. Learn core concepts: Understand variables, loops, conditions, and functions.
+3. Build small projects: Focus 70% of your time on building real-world projects rather than just reading theory.

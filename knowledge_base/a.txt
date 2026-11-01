@@ -1,0 +1,15 @@
+Python is a high-level, general-purpose programming language created by Guido van Rossum and first released in 1991.
+
+Key Features
+
+• Readability: Uses clean syntax and significant whitespace indentation.
+• Versatility: Supports multiple paradigms including object-oriented, functional, and procedural programming.
+• Batteries-Included: Comes with a comprehensive standard library and an expansive ecosystem of third-party packages.
+• Dynamic Typing: Manages memory automatically using reference counting and a cycle-detecting garbage collector.
+
+Common Uses
+
+• Artificial Intelligence & Machine Learning: Powered by libraries such as TensorFlow, Keras, NumPy, and PyTorch.
+• Web Development: Built with back-end frameworks like Django and Flask.
+• Data Science & Analytics: Utilized via tools like Pandas and Matplotlib to process and visualize data.
+• Automation & Scripting: Used to write scripts for system administration, testing, and file management

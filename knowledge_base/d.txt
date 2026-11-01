@@ -1,0 +1,23 @@
+
+3,807 views  Oct 28, 2026  INDIA
+☕ Support codestorywithMIK (No Pressure)
+Education here is 100% free and always will be.
+If the content helped you and you'd like to support the channel with a coffee:
+
+UPI: imammazhar4@ybl
+--------------------------------------------------
+
+Complete PDF Link - https://github.com/MAZHARMIK/Intervie...
+
+Whatsapp Community Link : https://www.whatsapp.com/channel/0029...
+
+Hi Everyone, welcome to the Video-14th of our "Advanced AI" playlist by codestorywithMIK.
+
+Video-13 : Give Your AI Agent Knowledge Base | RAG Part 1: Embedding | Cosine Similarity | Advanced AI Playlist :    • Give Your AI Agent Knowledge Base | RAG Pa...  
+
+In the last video, we learned how text becomes a vector and how to compare two vectors with cosine similarity. In this video, we use those two ingredients on real documents.
+We create a small fake company knowledge base, load the documents, embed each document, and build a search function that finds the best matching documents for a question. Then we deliberately expose the problems of this simple first version: one embedding per document is blurry because of pooling, everything is re-embedded on every start, too much text would go to the LLM, and the best score always exists even when no document answers the question. Each problem is fixed in the upcoming videos. Our agent stays untouched in this video.
+
+Video Title : Make Your AI Agent Search Documents | RAG Part 2: Creating Embeddings & Searching | Advanced AI Playlist | codestorywithMIK
+Topic : RAG, Knowledge Base, Loading Documents in Python, Creating Embeddings, Cosine Similarity Search, top_k, Re-embedding Problem, Context Size, Semantic Search Limits
+
