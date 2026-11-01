@@ -12,6 +12,14 @@ client = OpenAI(
 EMBED_MODEL=os.getenv("EMBED_MODEL")
 KB_FOLDER=os.getenv("KB_FOLDER")
 
+#problems -->
+#1. The saved vector_store.json file can be stale/outdated 
+# if the knowledge base folder is updated with new document
+# or existing documents are modified.
+
+#2. if embedding model is changed in the .env file, 
+# then the saved vector_store.json file will be stale/outdated.
+
 
 #get the embedding of a text
 def get_embedding(text):
