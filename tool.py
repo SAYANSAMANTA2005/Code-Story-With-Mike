@@ -38,7 +38,6 @@ Tools=[
     },
     {
         "type":"function",
-        "function":{
             "name":"search_knowledge_base",
             "description":"Searches the Zorvex Technologies company knowledge base"
                           "including leave, medical, HR, hiring, technology, incident reports, and travel expense policies."
@@ -53,7 +52,7 @@ Tools=[
                 },
                 "required":["query"]
             }
-        }
+        
     }
 ]
 

@@ -1,0 +1,15 @@
+As of November 2026, Gemini 4 Carbon by Google is the top-ranked frontier AI model, leading public benchmarks with a score of 88.7.
+
+Top Frontier AI Models (November 2026)
+
+• Gemini 4 Carbon (Google) – Rank #1 (Score: 88.7): Released on October 28, 2026, it currently leads general reasoning and multimodal performance on public leaderboards.
+
+• Claude Opus 5.5 (Anthropic) – Rank #2 (Score: 86.3): Launched on September 22, 2026, excelling in long-running agent workflows, complex reasoning (83.9), and agent scores (79.1).
+
+• GPT-6 Astra (OpenAI) – Rank #3 (Score: 85.8): Released on September 3, 2026, built for high-stakes knowledge work and computer use with strong reasoning capabilities (85.8).
+
+• GPT-6.1 Sol (OpenAI) – Rank #4 (Score: 85.4): Released on September 29, 2026, offering a balanced mid-tier option for heavy reasoning and programmatic tool calling.
+
+• Claude Sonnet 5.5 (Anthropic) – Rank #6 (Score: 81.8): Released on September 28, 2026, leading the pack specifically in coding tasks (79.6) at a lower cost tier.
+
+• GPT-6 Cyber (OpenAI) – Released on November 5, 2026, representing OpenAI's latest specialized model scaled up for offensive security, vulnerability discovery, and automated exploitation

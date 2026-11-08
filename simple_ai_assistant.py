@@ -14,10 +14,6 @@ while True:
         if user_input.lower() in ["exit","quit"]:
             print("Exiting the Ai Assistant. GoodBye!")
             break
-        response=client.chat.completions.create(
-            model="qwen3:0.6b",
-            messages=messages
-        )
         #User's Input
         messages.append(
             {
@@ -25,6 +21,11 @@ while True:
             "content":user_input
                 }
             )
+        response=client.chat.completions.create(
+            model=os.getenv("MODEL"),
+            messages=messages,
+        )
+
         LLM_response=response.choices[0].message.content
         #LLM's Response 
         messages.append({

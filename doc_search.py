@@ -97,7 +97,7 @@ def test(user_query,documents,top_k=3):
     print(f"Top {top_k} results: {len(results)}")
     
     for r in results:
-        print(f"Score: {r['score']:.4f}, Source: {r['source']}, Size: {r['size']} characters")
+        print(f"Score: {r['score']:.4f}, Source: {r['source']}, txt:{r['text'][:100]}...")
 
 
 #lets start testing the code
@@ -107,6 +107,6 @@ documents=add_embeddings(documents)
 
 print(f"Loaded {len(documents)} documents from {KB_FOLDER} folder")
 
-user_query="python is good for Ai engineering"
+user_query="Google's New Frontier: AI-Powered Search and the Future of Information Retrieval"
 test(user_query,documents,3)
 
