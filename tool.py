@@ -26,22 +26,22 @@ def search_knowledge_base(query):
 Tools=[
     {
         "type":"function",
-        "name":"get_current_time",
-        "description":"Get the current date and time in the format YYYY-MM-DD HH:MM:SS",
-        "parameters":{
-            "type":"object",
-            "properties":{},
-            
+        "function":{
+            "name":"get_current_time",
+            "description":"Get the current date and time in the format YYYY-MM-DD HH:MM:SS. Use this for questions about the current date or time.",
+            "parameters":{
+                "type":"object",
+                "properties":{},
+                "required":[],
+                "additionalProperties":False
+            }
         },
-        #write down all parameters that are required for this function to work.
-        "required":[]
     },
     {
         "type":"function",
+        "function":{
             "name":"search_knowledge_base",
-            "description":"Searches the Zorvex Technologies company knowledge base"
-                          "including leave, medical, HR, hiring, technology, incident reports, and travel expense policies."
-                          "Use it to answer questions about company policies or documents. Returns the most relevant passages along with their sources.",
+            "description":"Search the Zorvex Technologies company knowledge base for leave, medical, HR, hiring, technology, incident reports, or travel expense policies. Use this to answer questions about company policies or documents. Returns relevant passages with their sources.",
             "parameters":{
                 "type":"object",
                 "properties":{
@@ -50,9 +50,10 @@ Tools=[
                         "description":"The query to search in the knowledge base"
                     },
                 },
-                "required":["query"]
+                "required":["query"],
+                "additionalProperties":False
             }
-        
+        }
     }
 ]
 
