@@ -15,7 +15,7 @@ while True:
             print("Exiting the Ai Assistant. GoodBye!")
             break
         response=client.chat.completions.create(
-            model=os.getenv("MODEL"),
+            model="qwen3:0.6b",
             messages=messages
         )
         #User's Input
